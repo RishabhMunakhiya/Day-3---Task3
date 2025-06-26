@@ -24,6 +24,10 @@
             <input type="text" id="author" placeholder="Author">
             <button onclick="addBook()">Add Book</button>
             <button id="cancelEditBtn" style="display:none" onclick="cancelEdit()">Cancel Edit</button>
+            <section class="search">
+            <h2>Search</h2>
+            <input id="search" type="text" placeholder="Search by title or author" oninput="filterBooks()" />
+    </section>
         </div>
 
 

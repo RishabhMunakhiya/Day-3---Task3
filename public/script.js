@@ -64,5 +64,46 @@ function deleteBook(id) {
         .then(() => fetchBooks());
 }
 
-// Initial load
+
+
+// seach functionality
+let allBooks = [];
+
+function renderBooks(books) {
+    const list = document.getElementById('bookList');
+    list.innerHTML = '';
+    books.forEach((book, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <span class="book-count">${index + 1}.</span>
+            <strong> ${book.title}</strong> by <strong>${book.author}</strong>
+            <button class="editBTn" onclick="editBook(${book.id}, '${book.title}', '${book.author}')">Edit</button>
+            <button class="deleteBtn" onclick="deleteBook(${book.id})">Delete</button>
+        `;
+        list.appendChild(li);
+    });
+    document.getElementById('bookCount').textContent = `Total Books: ${books.length}`;
+}
+
+function filterBooks() {
+    const query = document.getElementById('search').value.toLowerCase();
+    const filtered = allBooks.filter(b =>
+        b.title.toLowerCase().includes(query) ||
+        b.author.toLowerCase().includes(query)
+    );
+    renderBooks(filtered);
+}
+
+// Override fetchBooks to update allBooks and render
+function fetchBooks() {
+    fetch('/books')
+        .then(res => res.json())
+        .then(data => {
+            allBooks = data;
+            filterBooks(); // Show filtered or all books
+        });
+}
+
+// Attach search event
+document.getElementById('search').addEventListener('input', filterBooks);
 fetchBooks();
