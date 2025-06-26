@@ -117,7 +117,8 @@ Full Glass UI with dynamic book list and stylish hover animations
 
 ### 🙌 Acknowledgements
 
-Inspired by modern UI trends (Glassmorphism)
-Built with ❤️ using Node.js and Express
+- Inspired by modern UI trends (Glassmorphism)
+
+- Built with ❤️ using Node.js and Express
 
 
