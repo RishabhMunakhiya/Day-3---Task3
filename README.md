@@ -98,7 +98,8 @@ You can use Postman or any REST client to test API endpoints separately.
 ---
 
 ### 🌈 Screenshots
-![image](https://github.com/user-attachments/assets/f5a21f5b-275e-4d3f-b44b-2afb3a69ef5e)
+
+![image](https://github.com/user-attachments/assets/9552ee55-c233-4597-8e62-4afa7b79f3be)
 Full Glass UI with dynamic book list and stylish hover animations
 
 ---
