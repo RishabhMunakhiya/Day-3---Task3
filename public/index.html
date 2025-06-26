@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Add Book</a></li>
+            <li><a href="#">Books</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <img src="bg.jpg" alt="">
+        <div class="glass-container">
+            <h1>Book Manager</h1>
+
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <button onclick="addBook()">Add Book</button>
+            <button id="cancelEditBtn" style="display:none" onclick="cancelEdit()">Cancel Edit</button>
+        </div>
+
+
+        <div class="books">
+            <h2>Books Data</h2>
+            <ul id="bookList"></ul>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

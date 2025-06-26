@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+.navbar{
+    top:  0;
+    left: 0;
+    width: 100%;   
+    height: 60px;
+    background: rgba(182, 177, 177, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(31, 38, 135, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    color: rgb(102, 95, 95);
+    font-weight: 800;
+    font-family: 'Popins', sans-serif;
+    font-size: 30px;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    background: linear-gradient(90deg, #615bb4 0%, #d576e5 100%);
+    color: #222;
+    transform: scale(1.05) rotate(-3deg);
+}
+
+/* dgad */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    background:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKHtxBW4TSDJKRcQhlsRi_6vzxAC74O30Lce0xnTbh41XRiSH5lGl398oXrm3Y0_V0-YuiU6j7QJgAZyjitB7gcYmVCfJ7IyC_H7J_HPHRO207A_ddK8njJQPHIrwzsQoKRDEh8l0Wp_M_xvN_Nh55e7qcyAzbMdiTJd3TOXTqRanU4iasli3-f_7O6Q/s3840/BEAUTIFUL-WALLPAPER-5032023.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.container{
+    display: flex;
+    gap: 50px;
+}
+.glass-container {
+    display: flex;
+    justify-content: center                                                 ;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 40px 30px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.glass-container h1 {
+    margin-bottom: 20px;
+}
+.glass-container:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+    transform: translateY(-4px) scale(1.02);
+}
+
+input, button {
+    margin: 10px 0;
+    margin-left: 10px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.35);
+    box-shadow: 0 2px 8px rgba(31, 38, 135, 0.08);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    background: rgba(255,255,255,0.55);
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.12);
+}
+input::placeholder{
+    color: rgb(102, 99, 99);
+}
+
+button {
+    background: linear-gradient(135deg, #a542d7 35%, #4987d3 100%);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #818cf8 0%, #38bdf8 100%);
+    transform: scale(1.05) rotate(-3deg);
+}
+button:active {
+    transform: scale(0.95);
+}
+ul {
+    list-style: none;
+}
+.books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 10px 100px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.books:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+    transform: translateY(-4px) scale(1.02);
+}
+.deleteBtn{
+    background: linear-gradient(90deg, #f87171 0%, #fca5a5 100%);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: background 0.8s, transform 0.2s;
+}
+.deleteBtn:hover {
+    background: linear-gradient(90deg, #fca5a5 0%, #f87171 100%);
+    transform: scale(1.05) rotate(-3deg);
+}
+.editBTn {
+    background: linear-gradient(90deg, #774cfb 0%, #af7ee0 100%);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: background 0.8s, transform 0.2s;
+}
+.editBTn:hover {
+    background: linear-gradient(90deg, #af7ee0 0%, #774cfb 100%);
+    transform: scale(1.05) rotate(-3deg);
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .glass-container, .books {
+        width: 90%;
+        padding: 2000px;
+    }
+    input, button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.book-count{
+    font-weight: 600;
+}
