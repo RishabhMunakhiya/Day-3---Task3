@@ -1,4 +1,4 @@
-# 📚 Book Manager (Glassmorphism UI + Node.js REST API)
+# 📚 Book Manager (Node.js REST API and Express)
 
 A full-stack Book Manager web application that allows users to add, edit, delete, and view books using a RESTful API built with **Node.js and Express**, and a beautiful **Glassmorphism-based frontend UI** using **HTML, CSS, and JavaScript**.
 
